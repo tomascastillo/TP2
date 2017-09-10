@@ -13,6 +13,7 @@ public class Polinomio {
 		this.grado = coeficientes.length -1 ;
 		this.coeficientes = coeficientes;
 	}
+	
 	public Polinomio(String path) throws FileNotFoundException{
 		Scanner sc = new Scanner(new File(path));
 		
