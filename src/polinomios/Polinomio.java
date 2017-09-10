@@ -9,8 +9,8 @@ public class Polinomio {
 	private int grado;
 	private double[] coeficientes;
 	
-	public Polinomio(int grado, double[] coeficientes){
-		this.grado = grado;
+	public Polinomio( double[] coeficientes){
+		this.grado = coeficientes.length -1 ;
 		this.coeficientes = coeficientes;
 	}
 	public Polinomio(String path) throws FileNotFoundException{
