@@ -27,7 +27,16 @@ public class Polinomio {
 	public double evaluarMSucesivas (double x){ return 0; }
 	public double evaluarRecursiva (double x){ return 0; }
 	public double evaluarRecursivaPar (double x) { return 0; }
-	public double evaluarProgDinamica (double x) { return 0; }
+	public double evaluarProgDinamica (double x) { 
+
+			double resultado = coeficientes[grado], potencia=1;
+			for(int i=grado-1; i>=0; i--){
+				potencia*=x;
+				resultado += potencia * coeficientes[i];
+			}
+			return resultado;
+	
+	}
 	public double evaluarMejorada (double x){return 0;}
 	
 	/**
